@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Payment Methods</title>
+	
+
+	<title>Background Image Example</title>
+	<style>
+		body {
+			background-image: url('https://cdn.pixabay.com/photo/2013/12/08/12/12/bitcoin-225079_960_720.png');
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+	</style>
+</head>
+<body>
+	<!-- Content goes here -->
+</body>
+</html>
+```
+
+
+    <link rel="stylesheet" href="METHODUP.js">
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #0f0d0d;
+		}
+		
+		form {
+			background-color: #0e0d0ddd;
+			padding: 2rem;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.1);
+			margin: 2rem auto;
+			max-width: 600px;
+		}
+		
+		label {
+			display: block;
+			margin-bottom: 0.5rem;
+			font-weight: bold;
+		}
+		
+
+
+
+
+
+
+
+
+
+		
+		input[type="text"], select, textarea {
+			padding: 0.5rem;
+			border-radius: 3px;
+			border: 1px solid #040202;
+			width: 100%;
+			margin-bottom: 1rem;
+		}
+		
+		input[type="submit"] {
+			background-color: #edf0f3;
+			color: #fff;
+			padding: 0.5rem 1rem;
+			border-radius: 3px;
+			border: none;
+			cursor: pointer;
+		}
+		
+		input[type="submit"]:hover {
+			background-color: #005580;
+		}
+		
+		.payment-methods {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-evenly;
+			margin-top: 2rem;
+		}
+		
+		.payment-method {
+			background-color: #e6ecf3;
+			padding: 2rem;
+			border-radius: 5px;
+			box-shadow: 0 0 2px rgb(233, 225, 225);
+			margin-bottom: 2rem;
+			max-width: 300px;
+			text-align: center;
+		}
+		
+		.payment-method img {
+			max-width: 100%;
+			margin-bottom: 1rem;
+		}
+
+		.donate {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-evenly;
+			margin-top: 2rem;
+		}
+
+		.donate-form {
+			background-color: #728bce;
+			padding: 2rem;
+			border-radius: 5px;
+			box-shadow: 0 0 2px rgb(92, 126, 185);
+			margin-bottom: 2rem;
+			max-width: 600px;
+			text-align: center;
+		}
+
+		.donate-form label {
+			display: inline-block;
+			margin-right: 1rem;
+			font-weight: bold;
+		}
+
+		.donate-form select {
+			margin-right: 1rem;
+		}
+
+		.donate-form input[type="text"] {
+			margin-right: 1rem;
+		}
+
+		.donate-form input[type="submit"] {
+			margin-top: 1rem;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<label for="currency">Select Currency:</label>
+		<select id="currency" name="currency" required>
+			<option value="">Select your currency</option>
+			<option value="USD">USD</option>
+			<option value="EUR">EUR</option>
+			<option value="GBP">GBP</option>
+			<option value="JPY">JPY</option>
+			<option value="BTC">BTC</option>
+		</select>
+
+		<div class="payment-methods">
+			<div class="payment-method">
+				
+				
+					
+				
+			</div>
+			<div class="payment-method">
+				<img src="https://cdn.pixabay.com/photo/2013/12/08/12/12/bitcoin-225079_960_720.png" alt="Bitcoin">
+				<label for="bitcoin-address">Bitcoin Address:</label>
+				<input type="text" id="bitcoin-address" name="bitcoin-address" placeholder="Enter your Bitcoin address" required>
+				<label for="bitcoin-login">Bitcoin login:</label>
+				<input type="text" id="bitcoin login" name="bitcoin-login" placeholder="Enter bitcoin" required>
+			</div>
+			<div class="payment-method">
+				<img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_111x69.jpg" alt="paypal">
+                
+				<label for="paypal-email">PayPal Email:</label>
+				<input type="text" id="paypal-email" name="paypal-email" placeholder="Enter your PayPal email" required>
+                
+				<label for="paypal-password">paypal-password:</label>
+				<input type="text" id="password" name="paypal-password" placeholder="Enter the passwod" required>
+			</div>
+			<div class="payment-method">
+				<img src="https://www.citypng.com/public/uploads/preview/zelle-black-logo-png-11662548016bdwrcm6xcv.png" alt="Zelle">
+				<label for="zelle-email">Zelle Email:</label>
+				<input type="text" id="zelle-email" name="zelle-email" placeholder="Enter your Zelle email" required>
+				<label for="zelle password"> zelle Password:</label>
+				<input type="text" id="zelle-password" name="zelle-password" placeholder="Enter zelle password" required>
+			</div>
+			<div class="payment-method">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Venmo_Logo.svg" alt="Venmo">
+				<label for="venmo-name">Venmo Name:</label>
+				<input type="text" id="venmo-name" name="venmo-name" placeholder="Enter your Venmo name" required>
+				<label for="venmo-password">password:</label>
+				<input type="text" id="venmo-password" name="venmo-password" placeholder="Enter the password" required>
+			</div>
+			<div class="payment-method">
+				<!-- PayPal Logo --><table border="0" cellpadding="10" cellspacing="0" align="center"><tr><td align="center"></td></tr><tr><td align="center"><a href="https://www.paypal.com/webapps/mpp/paypal-popup" title="How PayPal Works" onclick="javascript:window.open('https://www.paypal.com/webapps/mpp/paypal-popup','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;"><img src="https://www.paypalobjects.com/webstatic/mktg/logo/AM_mc_vs_dc_ae.jpg" border="0" alt="PayPal Acceptance Mark"></a></td></tr></table><!-- PayPal Logo -->
+				<label for="card-number">Card Number:</label>
+				<input type="text" id="card-number" name="card-number" placeholder="Enter your card number" required>
+				<label for="card-expiry">Expiry Date:</label>
+				<input type="text" id="card-expiry" name="card-expiry" placeholder="MM/YY" required>
+				<label for="card-cvv">CVV:</label>
+				<input type="text" id="card-cvv" name="card-cvv" placeholder="Enter your CVV" required>
+				<label for="card-amount">Amount:</label>
+				<input type="text" id="card-amount" name="card-amount" placeholder="Enter the amount" required>
+			</div>
+		</div>
+
+		<div class="donate">
+			<div class="donate-form">
+				<label for="donor-name">Your Name:</label>
+				<input type="text" id="donor-name" name="donor-name" placeholder="Enter your name" required>
+				<label for="donation-amount">Amount to Donate:</label>
+				<input type="text" id="donation-amount" name="donation-amount" placeholder="Enter the amount to donate" required>
+				<input type="submit" value="Donate">
+                THANKS FOR YOUR 
+			</div>
+		</div>
+
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
